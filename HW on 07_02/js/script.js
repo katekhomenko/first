@@ -34,15 +34,13 @@ if (userName=='Админ') {
 	alert ('Я вас не знаю');
 }
     
-
 // Task 5 1-st edition
 
-var n = prompt('Skolko chisel?');
 var a=0;
 var b=1;
 console.log(a);
 console.log(b);
-for ( i=3; i<= n; i++) {
+for ( i=3; i<= 15; i++) {
 	var c = a+b;
 	a=b;
 	b=c;
