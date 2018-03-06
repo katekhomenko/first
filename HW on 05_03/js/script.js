@@ -6,7 +6,6 @@ function reverse(string) {
 	return arr.join('');
 }
 
-
 //Task 2 1-st edition
 
 function camelize(string)  {
@@ -27,8 +26,6 @@ for(i=0; i<arr.length; i++) {
 return arr.join('');
 }
 
-
-
 //Task 2 2-nd edition
 
 function camelize(string) {
@@ -37,7 +34,6 @@ function camelize(string) {
 	});
 	return arr;
 }
-
 
 //Task3
 var date = new Date(2018, 5, 2);
@@ -51,17 +47,16 @@ function isWeekEnd(date) {
 	}
 }
 
-
 //Task4 
 
-
-
-var request = prompt("Введите выражение?");
+var request = prompt("Введите выражение");
+function runJS(string) {
   try {
-   var result = eval(request);
+   eval(string);
+   return true;
   } catch (e) {
-    alert( e.message );
-  
-
+    return( e.message);
+	}
 }
-alert(result);
+
+runJS(request);
