@@ -1,4 +1,4 @@
-//Task 1
+// Task 1
 function factorial(n) {
 	if (n!=1){
 		return n*factorial(n-1);
@@ -13,20 +13,29 @@ console.log(factorial(5));
 //Task 2
 
 
-/*function getMinSub(arr) {
-  var minSum;
+function getMinSub(arr) {
+  var minSum = 0;
   var partialSum = 0;
+  var resultArr = [];
+  var partialArr= [];
   for (var i = 0; i < arr.length; i++) {
     partialSum += arr[i];
-    if (minSum > partialSum) {
-    	minSum=partialSum
+    partialArr.push(arr[i]);
+    if (minSum >= partialSum) {
+    	minSum=partialSum;
+      resultArr = partialArr.slice();
     }
 
     if (partialSum > 0) {
-    	return arr = [];
+      partialSum = 0;
+      partialArr = [];
+      
     } 
   }
-  return arr;
+  return resultArr;
 }
 
-alert( getMinSub([-1, -2, -3, 4, -2, 6]) );*/
+getMinSub([-5, 1, -3, 3, 5, -6]);
+
+
+
